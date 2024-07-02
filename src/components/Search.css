@@ -1,0 +1,12 @@
+/* Ensure the search container takes up space */
+.search-container {
+  width: 100%; /* Ensure the container takes up full width */
+  max-width: 900px; /* Optional: Set a max width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Ensure the search bar input takes full width */
+.search-input {
+  flex: 1; /* Ensure the input takes remaining space in the flex container */
+  width: 100%; /* Ensure the input width is 100% of the container */
+}

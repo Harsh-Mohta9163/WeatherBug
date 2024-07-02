@@ -1,0 +1,76 @@
+.weather-results {
+  height: 100vh;
+  width: 100vw;
+  background: url('/public/background1.gif') no-repeat center center fixed; /* Removed /public/ as it's the relative path */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 50px;
+}
+
+.weather-results.rain {
+  background: url('/public/background.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.weather-results.mist {
+  background: url('/public/background2.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.weather-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to separate from the accordions */
+}
+
+.weather-content img {
+  margin-bottom: 20px; /* Add margin to separate the image from the content above */
+}
+
+.accordion-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  width: 80%; /* Adjust width as needed */
+  margin-top: 20px; /* Add margin to separate from the weather content */
+  /* margin-left: 100px; */
+  gap: 70px; /* Add gap between accordions */
+}
+
+.accordion-item {
+  background: none;
+  border: none;
+}
+
+.accordion-button {
+  background: none;
+  color: white;
+  text-align: left;
+  font-size: 1.25rem;
+  box-shadow: none;
+}
+
+.accordion-button:after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+.accordion-body {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}

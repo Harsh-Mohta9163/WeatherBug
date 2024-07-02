@@ -1,0 +1,17 @@
+.card {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .card-img {
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove default border */
+  }
+  
